@@ -1,21 +1,22 @@
-### SETUP ENVIRONMENT
-#### Plenoxels: Radiance Fields without Neural Networks
-#### Windows is not officially supported, and we have only tested with Linux. Adding support would be welcome.
+## SETUP ENVIRONMENT
+### Plenoxels: Radiance Fields without Neural Networks
+### Windows is not officially supported, and we have only tested with Linux. Adding support would be welcome.
+#### Step 1: Create the virtualenv
 First create the virtualenv, we recommend using conda:
         
         
      conda env create -f environment.yml
      conda activate plenoxel
-
+#### Step 2: Clone the repo
 Then clone the repo and install the library at the root (svox2), which includes a CUDA extension:
 
 
     git clone https://github.com/sxyu/svox2.git
-
+#### Step 3: Install CUDA toolkit
 And if and only if your CUDA toolkit is older than 11, you will need to install CUDA toolkit ( >= version 11). In the link below, it is Cuda version 11.7:
 
      https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
-
+#### Step 4: Install the main library
 Finally, to install the main library, simply run:
 
      pip install -e . --verbose
